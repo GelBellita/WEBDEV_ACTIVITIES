@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>PERSONAL WEBSITE</title>
+    <link rel="stylesheet" href="new.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<style>
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        z-index: 1000;
+    }
+
+
+    .main {
+        width: 70%;
+        background-color: #769d5c;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .navbar {
+        width: 30%;
+        background-color: #2e4057;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    ul li {
+        display: inline-block;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: rgb(14, 13, 13);
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: larger;
+    }
+
+    ul li a:hover {
+
+        color: black;
+        text-decoration-line: underline;
+        transition: 0.5s;
+    }
+
+    button {
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        border: 1px solid black;
+        box-shadow: 0 0 0 0 black;
+        border-radius: 10em;
+    }
+
+    button:hover {
+        transform: translateY(-4px) translateX(-2px);
+        box-shadow: #B79891;
+        background-color: 	#bedff9
+    }
+
+    ;
+
+    button:active {
+        transform: translateY(2px) translateX(1px);
+        box-shadow: 0 0 0 0 black;
+    }
+
+
+
+    #logo {
+        width: 20%;
+        max-width: 200px;
+        height: auto;
+        float: right;
+        margin: 5px;
+    }
+
+    video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -15;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    p {
+        color: rgb(34, 32, 32);
+    }
+
+    .accordion {
+        margin: 60px auto;
+        width: 600px;
+    }
+
+    .accordion li {
+        list-style: none;
+        width: 100%;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        background: rgba(248, 244, 229, 0.8);
+        box-shadow: 6px 6px 10x -1px rgba(0, 0, 0, 0.15),
+            -6px -6px 10x -1px rgba(255, 255, 255, 0.7);
+    }
+
+    .accordion li label {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+
+    }
+
+    label::before {
+        content: '+';
+        margin-right: 10px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    .accordion .content {
+        color: black;
+        padding: 0 10px;
+        line-height: 26px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s, padding 0.5s;
+    }
+
+    .accordion input[type="radio"]:checked+label+.content {
+        max-height: 400px;
+        padding: 10px 10px 20px;
+    }
+
+    .accordion input[type="radio"]:checked+label::before {
+        content: '-';
+    }
+
+    #lol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px
+    }
+
+    #lo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: medium;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="main">
+            <img src="./assets/logoooo.png" id="logo">
+        </div>
+        <div class="navbar">
+            <ul>
+                <button>
+                    <li><a href="Home.html"><i class="fas fa-home"></i> Home</a></li>
+                </button>
+                <button>
+                    <li><a href="About us.html"><i class="fas fa-info-circle"></i> About us</a></li>
+                </button>
+                <button>
+                    <li><a href="FAQs.html"><i class="fas fa-question-circle"></i> FAQs</a></li>
+                </button>
+            </ul>
+        </div>
+    </header>
+    <div class="questions">
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="first" checked>
+                <label for="first">Personal information</label>
+                <div class="content">
+                    <ul id="lol">
+                        <li>I am 18 years old</li>
+                        <li>Single and NBSB</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="second" checked>
+                <label for="second">What are your struggles?</label>
+                <div class="content">
+                    <ul id="lo">
+                        <li> <strong><em>Designing.</em></strong> Designing proved to be a challenging aspect of the process. As an indecisive person, I found it difficult to settle on a specific look for the website.<br>
+                            <br>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="third" checked>
+                <label for="third">What are the websites that help you?</label>
+                <div class="content">
+                    <ul id="lo">
+                        <li> <strong>Stack Overflow, W3school</strong> and <strong>Chatgpt</strong><br><hr>
+                        I leveraged <u>Stack Overflow </u>extensively for answering questions, particularly on aspects
+                        related to webpage layout.The community was not only knowledgeable but also took the time to
+                        explain the reasoning behind certain practices, enriching my understanding. <br><hr>
+                        Whenever I faced a momentary lapse in remembering attributes, <u>W3school</u> served as a
+                            quick reference for me. <br> <hr>
+
+                       For code correction and debugging, I turned to <u>ChatGPT</u>. I would inquire about
+                            specific issues, asking questions like "What part of my code is incorrect?" or "Where did I
+                            make a mistake?" 
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <video autoplay muted loop>
+        <source src=".//assets/aesthetic vibe.mp4">
+        Your browser does not support the video tag.
+    </video>

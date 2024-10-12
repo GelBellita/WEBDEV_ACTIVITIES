@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>PERSONAL WEBSITE</title>
+    <link rel="stylesheet" href="new.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<style>
+    header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    z-index: 1000;
+}
+
+
+.main {
+    width: 70%;
+    background-color: #769d5c;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.navbar {
+    width: 30%;
+    background-color: #a8b5dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+    border-radius: 10em;
+  }
+  
+  button:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+  };
+  
+  button:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+  };
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(14, 13, 13);
+    padding: 5px ;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: larger;
+}
+
+ul li a:hover {
+    
+    color: black;
+    border-color: #07ffff;
+    text-decoration-line: underline;
+    transition: 0.5s;
+}
+#logo {
+    width: 20%;
+    max-width: 200px;
+    height: auto;
+    float: right;
+    margin: 5px;
+}
+
+.content {
+    display: grid;
+    grid-template-areas:
+        "head head head"
+        "content content side"
+        "foot foot foot";
+    grid-template-rows: 30px auto 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    box-sizing: border-box;
+    background: #B79891;
+    background: -webkit-linear-gradient(to right, #94716B, #B79891);
+    background: linear-gradient(to right, #94716B, #B79891);
+}
+
+
+
+aside {
+    grid-area: side;
+    width: 30%;
+    overflow-y: auto;
+    padding: 20px;
+    max-height: 100vh;
+}
+     video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -15;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+.footer-links a:hover {
+    transition: 0.3s ease;
+    color: aqua;
+}
+
+.footer-links p {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'lora';
+}
+
+.footer-links span {
+    font-size: 14px;
+    display: block;
+}
+
+.footer-links i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+</style>
+
+<body>
+    <header>
+        <div class="main">
+            <img src="./assets/logoooo.png" id="logo">
+        </div>
+        <div class="navbar">
+            <ul>
+                <button><li><a href="Home.html"><i class="fas fa-home"></i> Home</a></li></button>
+                <button><li><a href="About us.html"><i class="fas fa-info-circle"></i> About us</a></li></button>
+                <button><li><a href="FAQs.html"><i class="fas fa-question-circle"></i> FAQs</a></li></button>
+            </ul>
+        </div>
+    </header>
+    <video autoplay muted loop>
+        <source src="./assets/aesthetic vibe.mp4">
+        Your browser does not support the video tag.
+    </video>
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.facebook.com/Gel.love.anime" target="_blank">
+                <i class="fab fa-facebook"></i>
+                <p>Connect with me on Facebook</p>
+                <span>Basta ako pagchinat nagrereply agad <br>
+                    di ako nagpaparinig ah</span>
+            </a>
+
+            <a href="https://instagram.com/boredomdamin_?igshid=NGVhN2U2NjQ0Yg==" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <p>Follow me on Instagram</p>
+                <span>See snapshots of my life</span>
+            </a>
+
+            <a href="https://ngl.link/boreddamegel" target="_blank">
+                <i class="fas fa-link"></i>
+                <p>Have something to confess?</p>
+                <span>Send me anonymous message!</span>
+            </a>
+        </div>
+    </footer>
+</body>

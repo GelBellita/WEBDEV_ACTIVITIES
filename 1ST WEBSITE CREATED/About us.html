@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f4e5;
+            overflow: hidden;
+            color: #574240;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            background-color: transparent;
+            z-index: 1000;
+        }
+
+
+        .main {
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .navbar {
+            width: 30%;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            border: 1px solid black;
+            box-shadow: 0 0 0 0 black;
+            border-radius: 10em;
+        }
+
+        button:hover {
+            transform: translateY(-4px) translateX(-2px);
+            box-shadow: 2px 5px 0 0 black;
+        }
+
+        ;
+
+        button:active {
+            transform: translateY(2px) translateX(1px);
+            box-shadow: 0 0 0 0 black;
+        }
+
+        ;
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: rgb(14, 13, 13);
+            padding: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: larger;
+        }
+
+        ul li a:hover {
+
+            color: black;
+            border-color: #07ffff;
+            text-decoration-line: underline;
+            transition: 0.5s;
+        }
+
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -15;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            text-align: center;
+            z-index: 1000;
+            background: rgba(248, 244, 229, 0.8);
+            padding: 20px;
+            max-width: 70vw;
+            border-radius: 40px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #574240;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6em;
+            color: #574240;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .glow-button {
+            background: #c31432;
+            background: -webkit-linear-gradient(to right, #240b36, #c31432);
+            background: linear-gradient(to right, #240b36, #c31432);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            animation: glow 1s infinite alternate;
+        }
+
+        #logo {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <img src="./assets/logoooo.png" id="logo">
+        </div>
+        <div class="navbar">
+            <ul>
+                <button>
+                    <li><a href="Home.html"><i class="fas fa-home"></i> Home</a></li>
+                </button>
+                <button>
+                    <li><a href="About us.html"><i class="fas fa-info-circle"></i> About us</a></li>
+                </button>
+                <button>
+                    <li><a href="FAQs.html"><i class="fas fa-question-circle"></i> FAQs</a></li>
+                </button>
+            </ul>
+        </div>
+    </header>
+    <video autoplay muted loop>
+        <source src="./assets/Starry Night_ 3D Model of a Painting by Vincent Van Gogh.mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="content">
+        <div class="button-container">
+            <button class="glow-button">About us</button>
+        </div>
+        <p>Hey there! Welcome to my digital space. Let me spill the tea on why this website even exists.<br>
+            So, this is a project for our web development class with the amazing Sir Gamboa. <br>
+            We dived deep into HTML and CSS, and voila, this site was born. </p>
+
+        <p>I'm Engel, the brain behind the code. Yeah, I'm that IT student from BSIT-1B. </p>
+
+        <p>The design philosophy behind this website is <em>tranquility</em>.</p>
+        <p> I have always wanted to create a website that evoke a sense of peace, mirroring my calm and serene
+            personality.</p>
+
+    </div>
+    <div class="carrousel">
+        <article class="card">
+            <img src=""
+        </article>
+    </div>
+</body>
+
+</html>
